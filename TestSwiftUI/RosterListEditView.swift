@@ -11,7 +11,7 @@ struct RosterListEditView: View {
     @ObservedObject var model: RosterViewModel
     @Environment(\.presentationMode) var presentationMode
     @State private var showingPlayerEdit = false
-
+    
     var body: some View {
         NavigationView {
             List {

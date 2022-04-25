@@ -22,13 +22,16 @@ struct Player: Identifiable{
 
 }
 
+// MARK: to get observable to work this cannot be a class so use a struct
 
 //class Player: Equatable {
+//    var id: Int
 //    var firstName: String = ""
 //    var lastName: String = ""
 //    var jerseyNumber: String = ""
 //
-//    init(firstName: String, lastName: String, jerseyNumber: String) {
+//    init(id: Int, firstName: String, lastName: String, jerseyNumber: String) {
+//        self.id = id
 //        self.firstName = firstName
 //        self.lastName = lastName
 //        self.jerseyNumber = jerseyNumber
