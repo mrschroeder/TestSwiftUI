@@ -33,11 +33,9 @@ struct RosterPlayerEditView: View {
     }
 
     func doSave() {
-        for (index, element) in rosterViewModel.list.enumerated() {
-            if element.id == player.id {
-                rosterViewModel.list[index] = player
-                break
-            }
+        for (index, element) in rosterViewModel.list.enumerated() where element.id == player.id {
+            rosterViewModel.list[index] = player
+            break
         }
     }
 }

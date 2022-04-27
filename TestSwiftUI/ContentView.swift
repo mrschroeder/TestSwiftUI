@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Player: Identifiable{
+struct Player: Identifiable {
     var id: Int
     var firstName: String = ""
     var lastName: String = ""
@@ -24,7 +24,7 @@ struct Player: Identifiable{
 
 // MARK: to get observable to work this cannot be a class so use a struct
 
-//class Player: Equatable {
+// class Player: Equatable {
 //    var id: Int
 //    var firstName: String = ""
 //    var lastName: String = ""
@@ -42,7 +42,7 @@ struct Player: Identifiable{
 //       && lhs.lastName == rhs.lastName
 //       && lhs.jerseyNumber == rhs.jerseyNumber
 //    }
-//}
+// }
 
 class RosterViewModel: ObservableObject {
     @Published var list: [Player] = []
